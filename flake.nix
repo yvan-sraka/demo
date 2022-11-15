@@ -15,7 +15,7 @@
       let
         toolchain = (pkgs.rustChannelOf {
           rustToolchain = ./sha3/rust-toolchain;
-          sha256 = "sha256-DzNEaW724O8/B8844tt5AVHmSjSQ3cmzlU4BP90oRlY=";
+          sha256 = "sha256-lhGNvHjWaXp34/80o44GkO2AfukCxN3+T3rNPPdEcw8=";
         }).rust;
         naersk' = pkgs.callPackage naersk {
           cargo = toolchain;
