@@ -16,7 +16,7 @@
 
 {-# OPTIONS_GHC -Wno-unused-imports #-}
 
-module Sha3 (keccak_256, sha3_256) where
+module Dumb (sum10) where
 
 import Data.Int
 import Data.Word
@@ -24,5 +24,4 @@ import Foreign.C.String
 import Foreign.C.Types
 import Foreign.Ptr
 
-foreign import ccall unsafe "__c_keccak_256" keccak_256 :: CString -> IO (Ptr (CUChar))
-foreign import ccall unsafe "__c_sha3_256" sha3_256 :: CString -> IO (Ptr (CUChar))
+foreign import ccall unsafe "__c_sum10" sum10 :: CInt -> CInt -> CInt -> CInt -> CInt -> CInt -> CInt -> CInt -> CInt -> CInt -> IO (CInt)

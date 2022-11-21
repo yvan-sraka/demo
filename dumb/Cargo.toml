@@ -1,13 +1,13 @@
 [package]
-name = "sha3"
+name = "dumb"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-hs-bindgen = "0.6.1"
-sha3 = "0.10.6"
+hs-bindgen = { version = "0.7.0", features = ["full"] }
+
 
 [lib]
 crate-type = ["staticlib"]
